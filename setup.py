@@ -27,7 +27,7 @@ setup(
     version='0.1.1',
     description='Convert string to md5 hash, then to port number. No randomization involved.',
     project_urls={
-        "homepage": "https://github.com/kritarthh/str2port", "repository": "./"},
+        "homepage": "https://github.com/kritarthh/str2port", "repository": "https://github.com/kritarthh/str2port"},
     author='Pacharapol Withayasakpunt',
     author_email='patarapolw@gmail.com',
     license='MIT',
