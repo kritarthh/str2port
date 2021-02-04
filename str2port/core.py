@@ -4,11 +4,11 @@ from .common import IANAList
 
 
 class StrToPort:
-    def __init__(self, s, use_iana=False):
+    def __init__(self, s, use_iana=False, start=1024, end=65536):
         if use_iana:
             self.port_range = IANAList().available_ports
         else:
-            self.port_range = range(1024, 65536)
+            self.port_range = range(start, end)
 
         self.h = int(hashlib.md5(s.encode()).hexdigest(), 16)
 
